@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="form-group">
+      <label for="conferenceId">Enter Conference ID:</label>
+      <input type="number" class="form-control" id="conferenceId" [(ngModel)]="conferenceId">
+      <button class="btn btn-primary" (click)="search()">Search</button>
+    </div>
+    
+    <div class="tiles-container" *ngIf="isConferenceExist">
+      <div class="tile">
+        <h4>Title: {{ conference.title }}</h4>
+        <p>Description: {{ conference.description }}</p>
+        <p>Date: {{ conference.date | date:'dd/MM/yyyy' }}</p>
+        <p>Location: {{ conference.location }}</p>
+        <p>User ID: {{ conference.userID }}</p>
+      </div>
+    </div>
+    
+    <div *ngIf="errMsg" class="alert alert-danger">{{ errMsg }}</div>
+  </div>

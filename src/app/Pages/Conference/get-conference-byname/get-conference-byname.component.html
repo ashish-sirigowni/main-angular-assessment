@@ -1,0 +1,30 @@
+<input [(ngModel)]="title" placeholder="Enter Title" />
+<button (click)="getConferenceByName()">Search</button>
+
+<div class="tiles-container">
+  <div class="tile" *ngFor="let conference of conferences">
+    <h1>{{ conference.title }}</h1>
+    <table>
+      <tr>
+        <th>Title:</th>
+        <td>{{ conference.title }}</td>
+      </tr>
+      <tr>
+        <th>Description:</th>
+        <td>{{ conference.description }}</td>
+      </tr>
+      <tr>
+        <th>Date:</th>
+        <td>{{ conference.date }}</td>
+      </tr>
+      <tr>
+        <th>Location:</th>
+        <td>{{ conference.location }}</td>
+      </tr>
+      <tr>
+        <th>User ID:</th>
+        <td>{{ conference.userID }}</td>
+      </tr>
+    </table>
+  </div>
+</div>

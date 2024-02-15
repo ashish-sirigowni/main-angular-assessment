@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="tile" *ngFor="let conference of conference">
+      <h1>{{ conference.title }}</h1>
+      <table>
+        <tr>
+          <th>Description:</th>
+          <td>{{ conference.description }}</td>
+        </tr>
+        <tr>
+          <th>Date:</th>
+          <td>{{conference.date |date:'dd/MM/yyyy'}}</td>
+        </tr>
+        <tr>
+          <th>Location:</th>
+          <td>{{ conference.location }}</td>
+        </tr>
+        <tr>
+          <th>User ID:</th>
+          <td>{{ conference.userID }}</td>
+        </tr>
+      </table>
+      </div>
+</div>

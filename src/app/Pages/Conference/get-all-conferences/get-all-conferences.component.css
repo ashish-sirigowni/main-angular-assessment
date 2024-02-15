@@ -1,0 +1,42 @@
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .tile {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 300px; 
+    background-color: #fff;
+  }
+  
+  .tile h1 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  th {
+    text-align: left;
+    padding-right: 10px;
+    color: #555;
+  }
+  
+  td {
+    padding: 5px 0;
+  }
+  
+  
+  .tile:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  

@@ -1,0 +1,47 @@
+<div class="container">
+    <table class="table">
+        <tr>
+            <td colspan="3">
+                <span style="color: red;">{{ errMsg }}</span>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <table class="table" *ngIf="isConferenceExist">
+        <tr>
+            <td>Title</td>
+            <td>
+                <input type="text" [(ngModel)]="conference.title" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td>
+                <input type="text" [(ngModel)]="conference.description" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td>Date</td>
+            <td>
+                <input type="datetime-local" [(ngModel)]="conference.date" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td>Location</td>
+            <td>
+                <input type="text" [(ngModel)]="conference.location" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td>User ID</td>
+            <td>
+                <input type="text" [(ngModel)]="conference.userID" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button class="btn btn-primary" (click)="edit(conference.conferenceID)">Edit</button>
+            </td>
+        </tr>
+    </table>
+</div>

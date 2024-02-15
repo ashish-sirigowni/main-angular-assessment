@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.tile {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+}
+  
+.tile h1 {
+    margin-top: 0;
+}
+  
+table {
+    width: 100%;
+    margin-top: 10px;
+}
+  
+th {
+    text-align: left;
+    width: 30%;
+}
+  
+td {
+    width: 70%;
+}
+  
+.btn-edit, .btn-delete {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.btn-edit:hover, .btn-delete:hover {
+    opacity: 0.8;
+}
+  
+.btn-edit {
+    background-color: #007bff;
+    margin-right: 10px;
+}
+  
+.btn-delete {
+    background-color: #dc3545; 
+    margin-left: 10px;
+}
